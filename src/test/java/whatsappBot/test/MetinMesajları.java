@@ -34,6 +34,9 @@ public class MetinMesajları extends ReusableMethods {
         bekle(5);
         whatsappWeb.sohbeteBasla.click();
         bekle(2);
+        whatsappWeb.whatsappWebkullan.click();
+        whatsappWeb.sohbeteBasla.sendKeys(ConfigReader.getProperty("Gönderilecek-mesaj"));
+        whatsappWeb.send.click();
 
 
 
