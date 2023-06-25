@@ -22,41 +22,21 @@ public class MetinMesajları extends ReusableMethods {
 
         bekle(5);
         Robot robot = new Robot();
-        robot.mouseMove(699, 160);
-        robot.mousePress(InputEvent.BUTTON3_DOWN_MASK);
-        robot.mouseRelease(InputEvent.BUTTON3_DOWN_MASK);
-        bekle(5);
-        bekle(5);
-
-        robot.mouseMove(1100, 220);
-        robot.mousePress(InputEvent.BUTTON3_DOWN_MASK);
-        robot.mouseRelease(InputEvent.BUTTON3_DOWN_MASK);
         bekle(5);
         whatsappWeb.sohbeteBasla.click();
         bekle(2);
         whatsappWeb.whatsappWebkullan.click();
+        bekle(15);
         whatsappWeb.sohbeteBasla.sendKeys(ConfigReader.getProperty("Gönderilecek-mesaj"));
         whatsappWeb.send.click();
 
 
-
+        bekle(5);
         Driver.getDriver().get(ConfigReader.getProperty("numara2"));
 
+
         bekle(5);
 
-        robot.mouseMove(699, 160);
-        robot.mousePress(InputEvent.BUTTON3_DOWN_MASK);
-        robot.mouseRelease(InputEvent.BUTTON3_DOWN_MASK);
-        bekle(5);
-        bekle(5);
-
-        robot.mouseMove(1100, 220);
-        robot.mousePress(InputEvent.BUTTON3_DOWN_MASK);
-        robot.mouseRelease(InputEvent.BUTTON3_DOWN_MASK);
-        bekle(5);
-        whatsappWeb.sohbeteBasla.click();
-        bekle(2);
-        whatsappWeb.whatsappWebkullan.click();
         whatsappWeb.sohbeteBasla.sendKeys(ConfigReader.getProperty("Gönderilecek-mesaj"));
         whatsappWeb.send.click();
 
