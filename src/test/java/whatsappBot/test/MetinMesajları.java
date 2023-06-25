@@ -26,18 +26,31 @@ public class MetinMesajları extends ReusableMethods {
         whatsappWeb.sohbeteBasla.click();
         bekle(2);
         whatsappWeb.whatsappWebkullan.click();
-        bekle(15);
-        whatsappWeb.sohbeteBasla.sendKeys(ConfigReader.getProperty("Gönderilecek-mesaj"));
+        bekle(30);
+        whatsappWeb.textBox.sendKeys(ConfigReader.getProperty("Gönderilecek-mesaj"));
         whatsappWeb.send.click();
 
 
         bekle(5);
         Driver.getDriver().get(ConfigReader.getProperty("numara2"));
 
-
+        whatsappWeb.sohbeteBasla.click();
+        bekle(2);
+        whatsappWeb.whatsappWebkullan.click();
         bekle(5);
 
-        whatsappWeb.sohbeteBasla.sendKeys(ConfigReader.getProperty("Gönderilecek-mesaj"));
+        whatsappWeb.textBox.sendKeys(ConfigReader.getProperty("Gönderilecek-mesaj"));
+        whatsappWeb.send.click();
+
+        bekle(5);
+        Driver.getDriver().get(ConfigReader.getProperty("numara3"));
+
+        whatsappWeb.sohbeteBasla.click();
+        bekle(2);
+        whatsappWeb.whatsappWebkullan.click();
+        bekle(5);
+
+        whatsappWeb.textBox.sendKeys(ConfigReader.getProperty("Gönderilecek-mesaj"));
         whatsappWeb.send.click();
 
 
