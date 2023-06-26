@@ -17,7 +17,7 @@ public class WhatsappWeb {
     @FindBy(xpath = "//span[.=\"WhatsApp Web'i kullanın\"]")
     public WebElement whatsappWebkullan;
 
-    @FindBy(xpath = "//div[@class='to2l77zo gfz4du6o ag5g9lrv bze30y65 kao4egtt']/p[@class='selectable-text copyable-text iq0m558w']")
+    @FindBy(xpath = "//div[@class='to2l77zo gfz4du6o ag5g9lrv bze30y65 kao4egtt']//br[1]")
     public WebElement textBox;
 
     @FindBy(xpath = "//button[@class='tvf2evcx oq44ahr5 lb5m6g5c svlsagor p2rjqpw5 epia9gcq']/span[1]")

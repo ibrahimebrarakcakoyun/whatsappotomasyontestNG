@@ -15,9 +15,8 @@ public class MetinMesajları5Kisilik extends ReusableMethods {
         Driver.getDriver().get(ConfigReader.getProperty("numara1"));
         WhatsappWeb whatsappWeb = new WhatsappWeb();
 
-        bekle(5);
-        Robot robot = new Robot();
-        bekle(5);
+
+        bekle(8);
         whatsappWeb.sohbeteBasla.click();
         bekle(2);
         whatsappWeb.whatsappWebkullan.click();

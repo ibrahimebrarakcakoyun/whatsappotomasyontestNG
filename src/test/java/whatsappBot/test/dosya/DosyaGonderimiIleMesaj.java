@@ -25,6 +25,7 @@ public class DosyaGonderimiIleMesaj {
         whatsappWeb.whatsappWebkullan.click();
         bekle(30);
 
+        whatsappWeb.textBox.click();
         StringSelection stringSelection = new StringSelection(ConfigReader.getProperty("Dosya-yolu"));
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
         whatsappWeb.send.click();
@@ -40,7 +41,6 @@ public class DosyaGonderimiIleMesaj {
 
         whatsappWeb.textBox.sendKeys(ConfigReader.getProperty("Gönderilecek-mesaj"));
         whatsappWeb.send.click();
-
         bekle(5);
         Driver.getDriver().get(ConfigReader.getProperty("numara3"));
 
